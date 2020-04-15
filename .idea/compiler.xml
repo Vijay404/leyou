@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ly-auth-common" />
+        <module name="ly-auth-service" />
+        <module name="ly-cart" />
+        <module name="ly-common" />
+        <module name="ly-gateway" />
+        <module name="ly-item-interface" />
+        <module name="ly-item-service" />
+        <module name="ly-order" />
+        <module name="ly-page" />
+        <module name="ly-registry" />
+        <module name="ly-search" />
+        <module name="ly-seckill" />
+        <module name="ly-sms" />
+        <module name="ly-upload" />
+        <module name="ly-user-interface" />
+        <module name="ly-user-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="leyou" options="" />
+      <module name="ly-auth" options="" />
+      <module name="ly-auth-common" options="" />
+      <module name="ly-auth-service" options="" />
+      <module name="ly-cart" options="" />
+      <module name="ly-common" options="" />
+      <module name="ly-gateway" options="" />
+      <module name="ly-item" options="" />
+      <module name="ly-item-interface" options="" />
+      <module name="ly-item-service" options="" />
+      <module name="ly-order" options="" />
+      <module name="ly-page" options="" />
+      <module name="ly-registry" options="" />
+      <module name="ly-search" options="" />
+      <module name="ly-seckill" options="" />
+      <module name="ly-sms" options="" />
+      <module name="ly-upload" options="" />
+      <module name="ly-user" options="" />
+      <module name="ly-user-interface" options="" />
+      <module name="ly-user-service" options="" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,64 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: ly-gateway
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+zuul:
+  prefix: /api # 路由路径前缀
+  routes:
+    item-service: /item/**
+    search-service: /search/**
+    page-service: /page/**
+    user-service: /user/**
+    auth-service: /auth/**
+    cart-service: /cart/**
+    order-service: /order/**
+    seckill-service:
+      path: /seckill/**
+      serviceId: seckill-service
+      strip-prefix: false
+    upload-service:
+      path: /upload/**
+      serviceId: upload-service
+      strip-prefix: false
+  add-host-header: true # 转发后携带域名信息，防止cookie写入不了
+  sensitive-headers: # 覆盖PreDecorationFilter过滤器中忽略敏感头信息，否则无法设置Set-Cookie的cookie
+#  host:
+#    connect-timeout-millis: 10000
+#    max-total-connections: 10000
+#    max-per-route-connections: 10000
+#  semaphore:
+#    max-semaphores: 200
+# 熔断器配置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+# 负载均衡配置 见：AbstractRibbonCommand
+ribbon:
+  ConnectionTimeout: 3000 # 连接超时时长默认1秒
+  ReadTimeout: 3000 # 读取超时时长，默认也是1秒
+  MaxAutoRetries: 0 # 当前服务重试次数
+  MaxAutoRetriesNextServer: 0 # 切换服务重试次数
+
+leyou:
+  jwt:
+    pubKeyPath: D:\\tmp\\rsa\\rsa.pub # 公钥地址
+    cookieName: LY_TOKEN
+  filter:
+    allowPaths:
+      - /api/auth
+      - /api/search
+      - /api/user/register
+      - /api/user/check
+      - /api/user/code
+      - /api/item
+      - /api/cart

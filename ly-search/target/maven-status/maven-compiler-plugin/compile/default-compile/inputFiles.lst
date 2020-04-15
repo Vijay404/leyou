@@ -1,0 +1,13 @@
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\search\pojo\SearchResult.java
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\search\client\BrandClient.java
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\search\pojo\Goods.java
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\search\client\GoodsClient.java
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\search\pojo\SearchRequest.java
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\search\client\CategoryClient.java
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\search\controller\SearchController.java
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\search\repository\GoodsRepository.java
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\search\client\SpecificationClient.java
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\search\service\SearchService.java
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\search\service\impl\SearchServiceImpl.java
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\search\mq\ItemListener.java
+D:\ideaProjects\leyou\ly-search\src\main\java\com\leyou\LySearchApplication.java
